@@ -8,38 +8,59 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <!--Responsive Navbar-->
-    <nav
-      class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10"
-    >
-      <h1 class="text-2xl font-semibold">Greenden</h1>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-6 md:hidden cursor-pointer"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-        />
-      </svg>
+   <!--Responsive Navbar-->
+   <nav
+   class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10"
+ >
+   <h1 class="text-2xl font-semibold">Greenden</h1>
+   <svg 
+   id="menu-icon"
+     xmlns="http://www.w3.org/2000/svg"
+     fill="none"
+     viewBox="0 0 24 24"
+     stroke-width="1.5"
+     stroke="currentColor"
+     class="size-6 md:hidden cursor-pointer"
+   >
+     <path
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+     />
+   </svg>
 
-      <ul class="gap-5 text-gray-600 hidden md:flex">
-        <li>
-          <a class="hover:underline hover:text-black" href="index.html" >Home</a>
-        </li>
-        <li>
-          <a class="hover:underline hover:text-black" href="products.html" >Products</a>
-        </li>
-        <li><a class="hover:underline hover:text-black" href="./" >Contact</a></li>
-      </ul>
-    </nav>
-    <!--End-Responsive Navbar-->
+   <ul class="gap-5 text-gray-600 hidden md:flex">
+     <li>
+       <a class="hover:underline hover:text-black" href="./">Home</a>
+     </li>
+     <li>
+       <a class="hover:underline hover:text-black" href="products.html" >Products</a>
+     </li>
+     <li><a class="hover:underline hover:text-black" href="contact.html">Contact</a></li>
+   </ul>
+ </nav>
+ <!--End-Responsive Navbar-->
 
+ <!-- side-bar -->
+ <section id="side-nav" class="bg-green-100 fixed z-20 top-0 shadow-xl right-0 transition-all duration-1000" style="width: 30%; height: 40vh; right: -50%;">
+  <div class="text-right p-5">
+   <div class="text-right p-5">
+     <p class="inline cursor-pointer" id="close-nav" p>X</p>
+
+   </div>
+   <ul class="flex flex-col items-center gap-10 text-gray-600  md:flex ">
+     <li>
+       <a class="hover:underline hover:text-black" href="./">Home</a>
+     </li>
+     <li>
+       <a class="hover:underline hover:text-black" href="products.html" >Products</a>
+     </li>
+     <li><a class="hover:underline hover:text-black" href="contact.html">Contact</a></li>
+   </ul>
+
+  </section>
+
+ <!-- end-of-side-bar -->
  <!--Contact-Form-->
  <section class="mt-10 mb-10 ">
     <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md bg-green-900 rounded-xl">
@@ -72,6 +93,7 @@
 
     </section>
      <!--End-of-Footer-->
+     <script src="contact.js"></script>
 
     
 </body>
